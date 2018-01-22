@@ -49,6 +49,7 @@ def init_db():
         conn.commit()
         cursor.close()
         conn.close()
+
 def query_IDcustomer(name):
 	sql = "select id from customer where name='"+name+"'"
 	conn = sqlite3.connect("easytao.db")
